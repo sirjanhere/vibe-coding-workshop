@@ -11,7 +11,7 @@ import os
 #########################################
 
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
-MODEL_NAME = os.getenv("OLLAMA_MODEL", "phi3.5")  # you pulled phi3.5:latest
+MODEL_NAME = os.getenv("OLLAMA_MODEL", "phi3.5")  # pulled phi3.5:latest
 
 #########################################
 # FASTAPI SETUP

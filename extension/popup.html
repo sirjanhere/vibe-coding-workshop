@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Brain Booster Flashcards</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="title-wrap">
+          <div class="logo-circle">BB</div>
+          <div>
+            <h1>Brain Booster</h1>
+            <p>AI flashcards for hard content</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button id="export-btn" class="ghost-btn">Export JSON</button>
+          <button id="clear-btn" class="danger-btn">Clear All</button>
+        </div>
+      </header>
+
+      <main id="main">
+        <div id="empty-state" class="empty-state">
+          <h2>No flashcards yet</h2>
+          <p>
+            Select text on any page, right-click and choose
+            <strong>“Generate Flashcard with Brain Booster”</strong>.
+          </p>
+        </div>
+
+        <div id="cards-container" class="cards-container"></div>
+      </main>
+
+      <footer class="footer">
+        <span id="count-label">0 flashcards</span>
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
